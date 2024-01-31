@@ -14,16 +14,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.api.model;
+package com.apache.biz.api.model;
 
-import com.acme.biz.api.BaseTest;
+import com.apache.biz.api.BaseTest;
 import org.junit.jupiter.api.Test;
 
 import javax.validation.ConstraintViolation;
 import java.util.Set;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 public class UserTest extends BaseTest {

@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.web.servlet.idempotent;
+package com.apache.biz.web.servlet.idempotent;
 
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -26,7 +26,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 public class IdempotentFilter extends OncePerRequestFilter {

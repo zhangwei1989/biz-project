@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.api;
+package com.apache.biz.api;
 
 import org.springframework.util.MultiValueMap;
 
@@ -22,7 +22,7 @@ import javax.validation.Valid;
 import java.util.Map;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 public abstract class HttpApi<T> {

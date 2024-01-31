@@ -14,14 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.api.enums;
+package com.apache.biz.api.enums;
 
 import org.springframework.http.HttpStatus;
 
 /**
  * 状态码
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @see HttpStatus
  * @since
  */
@@ -33,7 +33,6 @@ public enum StatusCode {
             return super.message;
         }
     },
-
 
     FAILED(-1, "Failed"),
 

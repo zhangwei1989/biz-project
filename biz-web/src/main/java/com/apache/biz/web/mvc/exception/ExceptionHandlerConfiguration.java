@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.web.mvc.exception;
+package com.apache.biz.web.mvc.exception;
 
-import com.acme.biz.api.ApiResponse;
+import com.apache.biz.api.ApiResponse;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -26,7 +26,7 @@ import javax.validation.ValidationException;
 
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 @RestControllerAdvice

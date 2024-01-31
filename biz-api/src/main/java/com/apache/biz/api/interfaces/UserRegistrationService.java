@@ -33,14 +33,14 @@ import javax.validation.Valid;
  * OpenFeign
  * RMI -> 动态代理（基于接口编程）
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 @FeignClient(name = "user-service")
 @DubboService
 public interface UserRegistrationService {
 
-    @PostMapping(value = "/user/register", produces = "application/json;v=3") // V3
+    @PostMapping(value = "/user/register/v3") // V3
     Boolean registerUser(@RequestBody @Validated @Valid User user);
 
 }

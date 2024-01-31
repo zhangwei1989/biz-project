@@ -14,13 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.web.mvc.controller;
+package com.apache.biz.web.mvc.controller;
 
-import com.acme.biz.api.ApiRequest;
-import com.acme.biz.api.ApiResponse;
-import com.acme.biz.api.interfaces.UserRegistrationRestService;
-import com.acme.biz.api.model.User;
-import io.github.resilience4j.bulkhead.annotation.Bulkhead;
+import com.apache.biz.api.ApiRequest;
+import com.apache.biz.api.ApiResponse;
+import com.apache.biz.api.interfaces.UserRegistrationRestService;
+import com.apache.biz.api.model.User;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -29,14 +28,13 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.View;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 @RestController
 public class UserRegistrationRestController implements UserRegistrationRestService {
 
     @Override
-    @Bulkhead(name="")
     public ApiResponse<Boolean> registerUser(@RequestBody @Validated User user) {
         return ApiResponse.ok(Boolean.TRUE);
     }
@@ -45,6 +43,5 @@ public class UserRegistrationRestController implements UserRegistrationRestServi
     public ApiResponse<Boolean> registerUser(@RequestBody @Validated ApiRequest<User> userRequest) {
         return ApiResponse.ok(Boolean.TRUE);
     }
-
 
 }

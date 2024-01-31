@@ -14,14 +14,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.api;
+package com.apache.biz.api;
 
-import com.acme.biz.api.enums.StatusCode;
+import com.apache.biz.api.enums.StatusCode;
 
 import javax.validation.Valid;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 public class ApiResponse<T>  {

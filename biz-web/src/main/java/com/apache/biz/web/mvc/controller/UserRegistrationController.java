@@ -14,29 +14,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.web.mvc.controller;
+package com.apache.biz.web.mvc.controller;
 
-import com.acme.biz.api.interfaces.UserRegistrationService;
-import com.acme.biz.api.model.User;
+import com.apache.biz.api.interfaces.UserRegistrationService;
+import com.apache.biz.api.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 @RestController
 public class UserRegistrationController implements UserRegistrationService {
-
-    @Autowired
-    private UserRegistrationService userRegistrationService;
 
     // REST -> { body : {}}
 
     @Override
     @ResponseBody
     public Boolean registerUser(User user) {
-        return userRegistrationService.registerUser(user);
+        // @TODO 启动报错，暂时这样处理
+        return Boolean.TRUE;
     }
 }

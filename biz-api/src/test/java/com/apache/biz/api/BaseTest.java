@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.api;
+package com.apache.biz.api;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator;
@@ -31,7 +31,7 @@ import java.util.Set;
 /**
  * 公用的 Test 类
  *
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 public abstract class BaseTest {

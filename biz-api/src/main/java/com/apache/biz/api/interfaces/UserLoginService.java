@@ -26,7 +26,7 @@ import java.util.Map;
 
 /**
  * 用户登录服务接口（Open Feign、Dubbo 等公用）
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 @FeignClient("${user-login.service.name}") // user // user-login user-registration

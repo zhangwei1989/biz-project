@@ -14,9 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.web.mvc.method.annotation;
+package com.apache.biz.web.mvc.method.annotation;
 
-import com.acme.biz.api.ApiResponse;
+import com.apache.biz.api.ApiResponse;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.http.MediaType;
@@ -31,7 +31,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @see org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor
  * @since
  */
@@ -53,8 +53,8 @@ public class ApiResponseHandlerMethodReturnValueHandler implements HandlerMethod
         mavContainer.setRequestHandled(true);
         // returnValue =  POJO
         ApiResponse apiResponse = ApiResponse.ok(returnValue);
-        HttpServletResponse response = (HttpServletResponse) webRequest.getNativeResponse();
-        response.addHeader("v", "3");
+//        HttpServletResponse response = (HttpServletResponse) webRequest.getNativeResponse();
+//        response.addHeader("v", "3");
         ServletServerHttpResponse httpOutMessage = createOutputMessage(webRequest);
         converter.write(apiResponse, MediaType.APPLICATION_JSON, httpOutMessage);
     }

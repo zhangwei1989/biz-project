@@ -14,13 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.acme.biz.api;
+package com.apache.biz.api;
 
 /**
  * API 请求对象
  *
  * @param <T> T 模型对象类型
- * @author <a href="mailto:mercyblitz@gmail.com">Mercy</a>
+ * @author
  * @since
  */
 @Deprecated
