@@ -16,6 +16,7 @@
         <module>biz-core</module>
         <module>biz-data</module>
         <module>biz-dependencies</module>
+        <module>biz-client</module>
     </modules>
 
     <properties>

@@ -36,10 +36,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 @Deprecated
 public interface UserRegistrationRestService {
 
-    @PostMapping(path = "/user/register/v1") // V1
+    @PostMapping(path = "/user/register", produces = "application/json;v=1") // V1
     ApiResponse<Boolean> registerUser(@RequestBody @Validated ApiRequest<User> userRequest);
 
-    @PostMapping(path = "/user/register/v2") // V2
+    @PostMapping(path = "/user/register", produces = "application/json;v=2") // V2
     ApiResponse<Boolean> registerUser(@RequestBody @Validated User user);
 
 }
